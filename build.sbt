@@ -1,3 +1,4 @@
+import _root_.sbt.Keys._
 import android.Keys._
 
 scalaVersion := "2.11.6"
@@ -21,9 +22,6 @@ val commonSettings = androidBuild ++ Seq(
   libraryDependencies ++= Seq(
     "org.scalatest" %% "scalatest" % "2.1.5" % "test"
   ),
-
-  debugIncludesTests := false,
-
   addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0-M5" cross CrossVersion.full)
 )
 
